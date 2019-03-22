@@ -62,7 +62,7 @@ You can use Athens for any project that uses Go modules. Just set GOPROXY to htt
 If you'd rather not rely on the public Athens (it _is_ experimental after all!), then run your own! The easiest way to do that -- and the way I recommend -- is using Docker. Run this to start up Athens:
 
 ```console
-$ docker run -p 3000:3000 gomods/athens:v0.3.1
+$ docker run -p 3000:3000 -e GO_ENV=development gomods/athens:v0.3.1
 ```
 
 And then to set your environment variable to point to the local server:
